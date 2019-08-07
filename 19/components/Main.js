@@ -1,16 +1,18 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React from "react";
+import { Link } from "react-router";
 
-const Main = React.createClass({
+var createReactClass = require("create-react-class");
+
+const Main = createReactClass({
   render() {
     return (
       <div>
         <h1>
           <Link to="/">Reduxstagram</Link>
         </h1>
-        {React.cloneElement({...this.props}.children, {...this.props})}
+        {React.cloneElement({ ...this.props }.children, { ...this.props })}
       </div>
-    )
+    );
   }
 });
 

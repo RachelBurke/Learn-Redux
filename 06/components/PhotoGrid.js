@@ -1,12 +1,10 @@
-import React from 'react';
+import React from "react";
 
-const PhotoGrid = React.createClass({
+var createReactClass = require("create-react-class");
+
+const PhotoGrid = createReactClass({
   render() {
-    return (
-      <div className="photo-grid">
-      I'm the photo grid
-      </div>
-    )
+    return <div className="photo-grid">I'm the photo grid</div>;
   }
 });
 

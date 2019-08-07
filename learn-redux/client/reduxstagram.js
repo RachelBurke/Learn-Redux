@@ -1,5 +1,5 @@
-import React from "react";
-
+var React = require("react");
+import PropTypes from "prop-types";
 import { render } from "react-dom";
 
 // Import css

@@ -1,7 +1,9 @@
-import React from "react";
+var React = require("react");
+import PropTypes from "prop-types";
+var createReactClass = require("create-react-class");
 import { Link } from "react-router";
 
-const Main = React.createClass({
+const Main = createReactClass({
   render() {
     return (
       <div>

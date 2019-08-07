@@ -1,12 +1,10 @@
-import React from 'react';
+import React from "react";
 
-const Single = React.createClass({
+var createReactClass = require("create-react-class");
+
+const Single = createReactClass({
   render() {
-    return (
-      <div className="single-photo">
-      I'm the single
-      </div>
-    )
+    return <div className="single-photo">I'm the single</div>;
   }
 });
 
