@@ -1,11 +1,17 @@
 var React = require("react");
 var createReactClass = require("create-react-class");
-import PropTypes from "prop-types";
-import { Link } from "react-router";
+
+import Photo from "./Photo";
 
 const PhotoGrid = createReactClass({
   render() {
-    return <div className="photo-grid">I'm the photo grid.</div>;
+    return (
+      <div className="photo-grid">
+        {this.props.posts.map((post, i) => (
+          <Photo {...this.props} key={i} i={i} post={post} />
+        ))}
+      </div>
+    );
   }
 });
 
