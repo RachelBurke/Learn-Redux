@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const Single = React.createClass({
   render() {
-    return <div className="single-photo">I'm the photo grid.</div>;
+    return <div className="single-photo">I'm the single.</div>;
   }
 });
 
